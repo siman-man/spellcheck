@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'spellcheck'
+
+options = ARGV.getopts('vh', 'version', 'help')
+args = OptionParser.new.parse(ARGV)
+
+case
+  when options['v'] || options['version']
+    puts "spellcheck: #{SpellCheck::VERSION}"
+  when options['h'] || options['help'] || args.empty?
+    puts 'usage: spellcheck [file]'
+  else
+    # TODO: 複数のファイルを引数で渡された時に全て実行するようにする
+    SpellCheck::CLI.run args.first
+end
+

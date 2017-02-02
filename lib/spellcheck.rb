@@ -1,0 +1,10 @@
+require 'yaml'
+require 'terminal-table'
+
+require 'spellcheck/cli'
+require 'spellcheck/typo'
+require 'spellcheck/report'
+require 'spellcheck/color_string'
+require 'spellcheck/version'
+require 'spellcheck/filter'
+require 'spellcheck/proof_reader'
