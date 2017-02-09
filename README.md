@@ -1,5 +1,7 @@
 # Spellcheck
 
+[![Build Status](https://travis-ci.org/siman-man/spellcheck.svg?branch=master)](https://travis-ci.org/siman-man/spellcheck)
+
 simple spell checker for programming, written in Ruby.
 
 ## Installation
